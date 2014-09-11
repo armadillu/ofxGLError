@@ -15,13 +15,12 @@ class ofxGLError{
 
 	public:
 
-
 	static string getError(){
 
 		string err;
 		//https://www.opengl.org/wiki/GLAPI/glGetError
 		GLenum glErr = glGetError();
-		
+
 		switch (glErr) {
 			case GL_NO_ERROR: err = "GL_NO_ERROR"; break;
 			case GL_INVALID_ENUM: err = "GL_INVALID_ENUM"; break;
